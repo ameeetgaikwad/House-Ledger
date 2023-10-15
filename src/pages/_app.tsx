@@ -15,7 +15,10 @@ require("dotenv").config();
 
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, base, zora],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [
+    alchemyProvider({ apiKey: process.env.ALCHEMY_ID as string }),
+    publicProvider(),
+  ]
 );
 
 const { connectors } = getDefaultWallets({
