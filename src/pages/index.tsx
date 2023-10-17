@@ -9,11 +9,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <ConnectButton
-        label="Connect Wallet"
-        accountStatus="full"
-        showBalance={true}
-      />
     </>
   );
 }
