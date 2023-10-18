@@ -6,7 +6,7 @@ const PropertyType = () => {
     <>
       <div className="">
         <p className=" flex justify-center mb-10 font-bold text-4xl ml-10">
-          <span className="text-[#1252AE] ">Property </span>
+          <span className="text-[#1252AE]">Property</span>
           Types
         </p>
         <div className="flex  flex-col justify-center items-center md:space-x-10 md:flex-row md:justify-center md:items-center p-5 m-5">
