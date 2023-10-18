@@ -9,7 +9,7 @@ const PropertyType = () => {
           <span className="text-[#1252AE] ">Property </span>
           Types
         </p>
-        <div className="flex space-x-10 justify-center items-center p-5 m-5">
+        <div className="flex  flex-col justify-center items-center md:space-x-10 md:flex-row md:justify-center md:items-center p-5 m-5">
           <Image
             src="/icons/Apartment.png"
             className="h-36 w-20 mr-3"
