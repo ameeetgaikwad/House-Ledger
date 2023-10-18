@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Utils from "./utils";
+import Utils from "@/components/Utils";
 
 const About = () => {
   return (
