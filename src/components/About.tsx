@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import Utils from "@/components/Utils";
+import { motion } from "framer-motion";
+import { staggerContainer, textVariant } from "../../framer";
+import Svg from "@/components/utils/Svg";
 
 const About = () => {
   return (
     <>
       <div className="">
         <p className=" flex justify-center mb-10 font-bold text-4xl ml-10">
-          <span className="text-[#1252AE] ">About </span>
-          Us
+          <span className="text-[#1252AE] ">About </span> Us
         </p>
         <div className=" flex flex-col-reverse md:flex-row">
           <div className=" mx-2 md:mx-10">
@@ -21,41 +22,62 @@ const About = () => {
               Deals
             </p>
             <div className="flex justify-between mx-2 md:mx-20">
-              <div className="flex flex-col justify-start items-start">
-                <div className="flex justify-center items-center space-x-4">
-                  <Utils />
+              <motion.div
+                variants={staggerContainer(0.1, 0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+                className="flex flex-col justify-start items-start"
+              >
+                <motion.div
+                  variants={textVariant(1.1)}
+                  className="flex justify-center items-center space-x-4"
+                >
+                  <Svg />
                   <p>
                     A building with only one room and typically a steep pointy
                     roof.
                   </p>
-                </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <Utils />
+                </motion.div>
+                <motion.div
+                  variants={textVariant(1.2)}
+                  className="flex justify-center items-center space-x-4"
+                >
+                  <Svg />
                   <p>
                     A vehicle on wheels that has a permanent residence attached
                     to it.
                   </p>
-                </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <Utils />
+                </motion.div>
+                <motion.div
+                  variants={textVariant(1.3)}
+                  className="flex justify-center items-center space-x-4"
+                >
+                  <Svg />
                   <p>
                     Performing financial analysis and valuation of properties.
                   </p>
-                </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <Utils />
+                </motion.div>
+                <motion.div
+                  variants={textVariant(1.4)}
+                  className="flex justify-center items-center space-x-4"
+                >
+                  <Svg />
                   <p>
                     Someone who examines buildings and works with appraisers.
                   </p>
-                </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <Utils />
+                </motion.div>
+                <motion.div
+                  variants={textVariant(1.5)}
+                  className="flex justify-center items-center space-x-4"
+                >
+                  <Svg />
                   <p>
                     A dwelling typically made of raw materials such as bamboo,
                     mud, and clay.
                   </p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
           <div className="flex justify-center items-center">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Utils = () => {
+const Svg = () => {
   return (
     <div>
       <svg
@@ -30,4 +30,4 @@ const Utils = () => {
   );
 };
 
-export default Utils;
+export default Svg;
