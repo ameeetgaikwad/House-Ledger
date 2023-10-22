@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import PropertyType from "@/components/PropertyType";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import Faq from "@/components/Faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <PropertyType />
         <About />
+        <Faq />
         <Footer />
       </div>
     </>

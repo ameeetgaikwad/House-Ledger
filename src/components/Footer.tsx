@@ -171,7 +171,9 @@ const Footer = () => {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/ameeetgaikwad/House-Ledger"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
