@@ -4,7 +4,7 @@ import Image from "next/image";
 const PropertyType = () => {
   return (
     <>
-      <div className="">
+      <div className="" id="about">
         <p className=" flex justify-center mb-10 font-bold text-4xl ml-10">
           <span className="text-[#1252AE]">Property</span>
           Types

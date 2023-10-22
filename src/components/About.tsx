@@ -7,7 +7,7 @@ import Svg from "@/components/utils/Svg";
 const About = () => {
   return (
     <>
-      <div className="">
+      <div>
         <p className=" flex justify-center mb-10 font-bold text-4xl ml-10">
           <span className="text-[#1252AE] ">About </span> Us
         </p>
@@ -72,7 +72,7 @@ const About = () => {
                   className="flex justify-center items-center space-x-4"
                 >
                   <Svg />
-                  <p>
+                  <p id="faq">
                     A dwelling typically made of raw materials such as bamboo,
                     mud, and clay.
                   </p>
